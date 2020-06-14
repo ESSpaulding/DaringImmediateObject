@@ -7,9 +7,11 @@ struct Person           //User Defined Type
     float hairLength;
     float GPA;
     unsigned int SATScore;
-
+    Person();
     void run(int howFast, bool startWithLeftFoot);  //function
 };
+
+Person::Person() : age(22), height(72), hairLength(0.f), GPA(0.f), SATScore(0)  {}
 
 void Person::run(int howFast, bool startWithLeftFoot)  //function definition
     {
